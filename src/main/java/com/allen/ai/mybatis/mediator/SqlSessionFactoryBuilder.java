@@ -19,6 +19,7 @@ import java.util.regex.Pattern;
 
 public class SqlSessionFactoryBuilder {
 
+    //build(构建实例化元素)
     public DefaultSqlSessionFactory build(Reader reader){
         SAXReader saxReader = new SAXReader();
         try {
@@ -32,6 +33,7 @@ public class SqlSessionFactoryBuilder {
         return null;
     }
 
+    //parseConfiguration(解析配置)
     private Configuration parseConfiguration(Element root){
         Configuration configuration = new Configuration();
         configuration.setDataSource(dataSource(root.selectNodes("//dataSource")));
@@ -54,6 +56,7 @@ public class SqlSessionFactoryBuilder {
         return dataSource;
     }
 
+    //connection(Map<String, String> dataSource) (链接数据库)
     private Connection connection(Map<String, String> dataSource) {
         try {
             Class.forName(dataSource.get("driver"));
@@ -64,7 +67,7 @@ public class SqlSessionFactoryBuilder {
         return null;
     }
 
-    // 获取SQL语句信息
+    // 获取SQL语句信息,mapperElement (解析sql语句)
     private Map<String, XNode> mapperElement(List<Element> list) {
         Map<String, XNode> map = new HashMap<>();
 

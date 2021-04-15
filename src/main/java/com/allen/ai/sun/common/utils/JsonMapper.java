@@ -1,4 +1,4 @@
-package com.allen.ai.common.utils;
+package com.allen.ai.sun.common.utils;
 
 /**
  * Created by panchong on 2020/9/30.

@@ -1,5 +1,6 @@
 package com.allen.ai.agent;
 
+import com.allen.ai.IMyUserDao;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinitionHolder;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
@@ -15,9 +16,9 @@ public class RegisterBeanFactory implements BeanDefinitionRegistryPostProcessor 
         GenericBeanDefinition beanDefinition = new GenericBeanDefinition();
         beanDefinition.setBeanClass(MapperFactoryBean.class);
         beanDefinition.setScope("singleton");
-        beanDefinition.getConstructorArgumentValues().addGenericArgumentValue(IUserDao.class);
+        beanDefinition.getConstructorArgumentValues().addGenericArgumentValue(IMyUserDao.class);
 
-        BeanDefinitionHolder definitionHolder = new BeanDefinitionHolder(beanDefinition, "userDao");
+        BeanDefinitionHolder definitionHolder = new BeanDefinitionHolder(beanDefinition, "myUserDao");
         BeanDefinitionReaderUtils.registerBeanDefinition(definitionHolder, registry);
     }
 

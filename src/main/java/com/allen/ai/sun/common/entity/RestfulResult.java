@@ -1,4 +1,4 @@
-package com.allen.ai.common.entity;
+package com.allen.ai.sun.common.entity;
 
 /**
  * Created by panchong on 2020/9/30.

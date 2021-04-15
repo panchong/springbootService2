@@ -1,6 +1,8 @@
-package com.allen.ai.agent;
+package com.allen.ai;
 
-public interface IUserDao {
+import com.allen.ai.agent.Select;
+
+public interface IMyUserDao {
 
     @Select("select userName from user where id = #{uId}")
     String queryUserInfo(String uId);

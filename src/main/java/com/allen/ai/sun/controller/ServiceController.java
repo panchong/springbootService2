@@ -4,8 +4,8 @@ package com.allen.ai.sun.controller;
  * Created by panchong on 2020/9/30.
  */
 
-import com.allen.ai.common.entity.RestfulResult;
-import com.allen.ai.common.utils.CommonUtils;
+import com.allen.ai.sun.common.entity.RestfulResult;
+import com.allen.ai.sun.common.utils.CommonUtils;
 import com.allen.ai.sun.entity.ServiceInfo;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
