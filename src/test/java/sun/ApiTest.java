@@ -1,6 +1,6 @@
 package sun;
 
-import agent.IUserDao;
+import com.allen.ai.agent.IUserDao;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

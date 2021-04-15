@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mybatis.dao.ISchoolDao">
+<!DOCTYPE mapper PUBLIC "-//com.allen.ai.mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.allen.ai.mybatis.dao.ISchoolDao">
 
-    <select id="querySchoolInfoById" resultType="mybatis.po.School">
+    <select id="querySchoolInfoById" resultType="com.allen.ai.mybatis.po.School">
         SELECT id, name, address, createTime, updateTime
         FROM school
         where id = #{id}

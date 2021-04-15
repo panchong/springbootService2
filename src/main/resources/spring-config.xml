@@ -4,5 +4,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
        default-autowire="byName">
 
-    <bean id="userDao" class="agent.RegisterBeanFactory"/>
+    <bean id="userDao" class="com.allen.ai.agent.RegisterBeanFactory"/>
 </beans>
